@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/defaultMargin"
+>
+
+
+    <Space android:layout_width="wrap_content" android:layout_height="0dp"
+           android:layout_weight="1"/>
+
+    <include
+            android:id="@+id/option1_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/input_item"
+    />
+
+    <Space android:layout_width="wrap_content" android:layout_height="0dp"
+           android:layout_weight="1"/>
+
+    <include
+            android:id="@+id/option2_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/input_item"
+    />
+
+    <Space android:layout_width="wrap_content" android:layout_height="0dp"
+           android:layout_weight="1"/>
+
+    <include
+            android:id="@+id/option3_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/input_item"
+    />
+
+    <Space android:layout_width="wrap_content" android:layout_height="0dp"
+           android:layout_weight="1"/>
+
+
+    <include
+            android:id="@+id/option4_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/input_item"
+    />
+
+    <Space android:layout_width="wrap_content" android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+    <include
+            android:id="@+id/option5_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/input_item"
+    />
+
+    <Space android:layout_width="wrap_content" android:layout_height="0dp"
+           android:layout_weight="4"/>
+
+
+    <Button
+            android:id="@+id/save_choices_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/done"
+            android:layout_margin="@dimen/largeMargin"
+            android:padding="@dimen/defaultMargin"
+            android:textSize="@dimen/buttonTextSize"
+    />
+</LinearLayout>

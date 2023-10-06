@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.wheel.WheelActivity"
+        android:padding="@dimen/defaultMargin"
+        android:id="@+id/wheel_layout">
+
+    <xyz.sleekstats.wheelapp.ui.wheel.WheelView
+            android:id="@+id/wheel_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/spin_button"
+            android:layout_marginBottom="@dimen/wheelMargin"
+            android:layout_marginTop="@dimen/wheelMargin"
+            app:layout_constraintTop_toBottomOf="@+id/winnerDisplayTextView"/>
+    <Button
+            android:id="@+id/spin_button"
+            android:text="@string/spin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/defaultMargin"
+            android:textSize="@dimen/buttonTextSize"
+            android:layout_marginBottom="@dimen/largeMargin"
+            android:layout_marginEnd="@dimen/largeMargin"
+            android:layout_marginStart="@dimen/largeMargin"/>
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/arrowSize"
+            android:layout_height="@dimen/arrowSize"
+            app:srcCompat="@drawable/ic_wheel_arrow_black_24dp"
+            android:rotation="-90"
+            app:layout_constraintBottom_toBottomOf="@+id/wheel_view"
+            app:layout_constraintTop_toTopOf="@+id/wheel_view"
+            app:layout_constraintStart_toEndOf="@+id/wheel_view"
+            app:layout_constraintEnd_toEndOf="@+id/wheel_view"/>
+    <TextView
+            android:id="@+id/winnerDisplayTextView"
+            android:text=""
+            android:textSize="@dimen/winnerTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="@dimen/smallMargin"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/smallMargin" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/smallMargin"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

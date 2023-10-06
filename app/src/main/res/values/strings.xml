@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">WheelApp</string>
+    <string name="spin">Spin</string>
+    <string name="done">Done</string>
+    <string name="enter_more_choices_warning">Please enter at least 2 wheel choices!</string>
+</resources>

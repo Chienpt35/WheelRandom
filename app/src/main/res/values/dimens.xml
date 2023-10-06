@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen  name="defaultTextSize">18sp</dimen >
+    <dimen  name="winnerTextSize">36sp</dimen >
+    <dimen  name="buttonTextSize">24sp</dimen >
+    <dimen  name="wheelTextSize">24sp</dimen >
+    <dimen  name="arrowSize">24dp</dimen >
+    <dimen  name="smallMargin">8dp</dimen >
+    <dimen  name="defaultMargin">16dp</dimen >
+    <dimen  name="largeMargin">32dp</dimen >
+    <dimen  name="wheelMargin">32dp</dimen >
+    <integer name="wheelBorder">16</integer >
+</resources>

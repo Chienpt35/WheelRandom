@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wheel_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/defaultMargin"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    tools:context=".ui.wheel.WheelActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/winnerDisplayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/smallMargin"
+            android:layout_marginEnd="@dimen/smallMargin"
+            android:text=""
+            android:textSize="@dimen/winnerTextSize" />
+
+        <Button
+            android:id="@+id/spin_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:text="@string/spin"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <xyz.sleekstats.wheelapp.ui.wheel.WheelView
+            android:id="@+id/wheel_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/arrowSize"
+            android:layout_height="@dimen/arrowSize"
+            android:rotation="-90"
+            app:layout_constraintBottom_toBottomOf="@+id/wheel_view"
+            app:layout_constraintEnd_toEndOf="@+id/wheel_view"
+            app:layout_constraintStart_toEndOf="@+id/wheel_view"
+            app:layout_constraintTop_toTopOf="@+id/wheel_view"
+            app:srcCompat="@drawable/ic_wheel_arrow_black_24dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
